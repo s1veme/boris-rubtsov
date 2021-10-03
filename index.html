@@ -15,6 +15,11 @@
 				<div class="logo">
 					<img src="images/logo.svg" alt="logo">
 				</div>
+					<button id="burger">
+				<span class="bug-top"></span>
+				<span class="bug-mid"></span>
+				<span class="bug-bot"></span>
+			</button>
 				<nav class="header__menu">
 					<ul class="header__list">
 						<li><a href="#" class="header__link">Автор</a></li>
@@ -27,6 +32,7 @@
 						<a href="#" class="mail">pochta@gmail.com</a>
 					</div>
 				</nav>
+			
 			</div>
 			<div class="header-center">
 					<div class="header-left">
@@ -39,8 +45,12 @@
 							Вы можете посмотреть небольшой промо-ролик на котором я в кратце обьясню суть курса
 							<button class="player"></button>
 						</div>
+						<img src="images/macbg.png" alt="">
 						<div class="head-list">
 							<div class="format">
+							<svg class="head1">
+								<use xlink:href="./images/svg/sprite.svg#h1"></use>
+							</svg>
 								<div class="title">
 									Формат:
 								</div>
@@ -49,14 +59,20 @@
 								</div>
 							</div>
 							<div class="start">
+							<svg class="head2">
+								<use xlink:href="./images/svg/sprite.svg#h2"></use>
+							</svg>
 								<div class="title">
 									Начало:
 								</div>
-								<div class="text">
+								<time class="text time"  detetime="2020-10-20">
 									20.10.20
-								</div>
+								</time>
 							</div>
 							<div class="duration">
+							<svg class="head3">
+								<use xlink:href="./images/svg/sprite.svg#h3"></use>
+							</svg>
 								<div class="title">
 									Длительность:
 								</div>
@@ -81,13 +97,13 @@
 	<div class="container">
 		<div class="autor-body">
 			<div class="autor-left">
-				<div class="autor-title">АВТОР КУРСА</div>
+				<h2 class="autor-title">АВТОР КУРСА</h2>
 				<div class="autor-img"><img src="images/author_final.svg" alt=""></div>
 			</div>
 			<div class="autor-right">
-				<div class="name">
+				<h3 class="name">
 					Борис Рубцов
-				</div>
+				</h3>
 				<div class="autor-text">
 					О себе .Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elit facilisi consequat faucibus amet. Blandit eget elit venenatis diam congue vel.О себе .Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elit facilisi consequat faucibus amet. Blandit eget elit venenatis diam congue vel.
 				</div>
@@ -119,19 +135,23 @@
 			<div class="start-center">
 				<ul class="starts-blocks">
 					<li class="starts--block">
-						<h2 class="starts-number">
+						<div class="starts-number">
 							
-						</h2>
+						</div>
 						<div class="srarts-content">
 							<div class="left-start">
-								<h4 class="content-title">
+								<h3 class="content-title">
 									Для людей с опытом в видео
-								</h4>
+								</h3>
 								<div class="content-text">
 									Для тех кто знает основы, но хочет прокачать свои навыки для улучшения портфолио и привлечения клиентов.
 								</div>
 							</div>
-							<div class="right-start"><img src="images/start-img1.svg" alt=""></div>
+							<div class="right-start">
+							<svg class="star-svg">
+								<use xlink:href="./images/svgcolor/spritecolor.svg#star1"></use>
+							</svg>
+							</div>
 						</div>
 					</li>
 					
@@ -141,14 +161,16 @@
 						</h2>
 						<div class="srarts-content">
 							<div class="left-start">
-								<h4 class="content-title">
+								<h3 class="content-title">
 									Для новичков в видео
-								</h4>
+								</h3>
 								<div class="content-text">
 Для ребят, которые определились что хотят заниматься видео, но не знают где брать информацию для обучения.
 								</div>
 							</div>
-							<div class="right-start"><img src="images/start-img2.svg" alt=""></div>
+							<div class="right-start"><svg class="star-svg">
+								<use xlink:href="./images/svgcolor/spritecolor.svg#star2"></use>
+							</svg></div>
 						</div>
 					</li>
 					
@@ -158,15 +180,17 @@
 						</h2>
 						<div class="srarts-content">
 							<div class="left-start">
-								<h4 class="content-title">
+								<h3 class="content-title">
 									Для людей с опытом фуфло курсов
-								</h4>
+								</h3>
 								<div class="content-text">
 									Много дебильных курсов которые обещают сделать проффесионалом
 за 2 часа в минуту, такого тут не будет
 								</div>
 							</div>
-							<div class="right-start"><img src="images/start-img3.svg" alt=""></div>
+							<div class="right-start"><svg class="star-svg">
+								<use xlink:href="./images/svgcolor/spritecolor.svg#star3"></use>
+							</svg></div>
 						</div>
 					</li>
 					
@@ -176,14 +200,16 @@
 						</h2>
 						<div class="srarts-content">
 							<div class="left-start">
-								<h4 class="content-title">
+								<h3 class="content-title">
 									Для людей, которым нужен новый виток в жизни
-								</h4>
+								</h3>
 								<div class="content-text">Для тех кто устал горбатиться за 25к 
 в месяц и хочет заниматься тем что любит
 								</div>
 							</div>
-							<div class="right-start"><img src="images/start-img4.svg" alt=""></div>
+							<div class="right-start"><svg class="star-svg">
+								<use xlink:href="./images/svgcolor/spritecolor.svg#star4"></use>
+							</svg></div>
 						</div>
 					</li>
 					
@@ -193,15 +219,17 @@
 						</h2>
 						<div class="srarts-content">
 							<div class="left-start">
-								<h4 class="content-title">
+								<h3 class="content-title">
 									Для творческих незнаек
-								</h4>
+								</h3>
 								<div class="content-text">
 									Для творческих личностей, которые не определились с деятельностю, но хотят 
 творить и горят этим!
 								</div>
 							</div>
-							<div class="right-start"><img src="images/start-img5.svg" alt=""></div>
+							<div class="right-start"><svg class="star-svg">
+								<use xlink:href="./images/svgcolor/spritecolor.svg#star4"></use>
+							</svg></div>
 						</div>
 					</li>
 					
@@ -223,12 +251,14 @@
 			<div class="skill-blocks">
 				<div class="skill-block">
 					<div class="skill-img">
-						<img src="images/skill1.svg" alt="">
+						<svg class="skill-svg">
+								<use xlink:href="./images/svgcolor/spritecolor.svg#skill1"></use>
+							</svg>
 					</div>
 					<div class="skill-text">
-						<div class="skill-tit">
+						<h3 class="skill-tit">
 							Собранную информацию
-						</div>
+						</h3>
 						<div class="skill-txt">Lorem ipsum dolor sit 
 amet,consectetur adipiscing.
 Lorem ipsum dolor sit amet.</div>
@@ -237,12 +267,14 @@ Lorem ipsum dolor sit amet.</div>
 				
 				<div class="skill-block">
 					<div class="skill-img">
-						<img src="images/skill2.svg" alt="">
+						<svg class="skill-svg">
+								<use xlink:href="./images/svgcolor/spritecolor.svg#skill2"></use>
+							</svg>
 					</div>
 					<div class="skill-text">
-						<div class="skill-tit">
+						<h3 class="skill-tit">
 							Навыки
-						</div>
+						</h3>
 						<div class="skill-txt">Lorem ipsum dolor sit 
 amet,consectetur adipiscing.
 Lorem ipsum dolor sit amet.</div>
@@ -251,11 +283,13 @@ Lorem ipsum dolor sit amet.</div>
 				
 				<div class="skill-block">
 					<div class="skill-img">
-						<img src="images/skill3.svg" alt="">
+						<svg class="skill-svg">
+								<use xlink:href="./images/svgcolor/spritecolor.svg#skill3"></use>
+							</svg>
 					</div>
 					<div class="skill-text">
-						<div class="skill-tit">Поддержка на курсе
-						</div>
+						<h3 class="skill-tit">Поддержка на курсе
+						</h3>
 						<div class="skill-txt">Lorem ipsum dolor sit 
 amet,consectetur adipiscing.
 Lorem ipsum dolor sit amet.</div>
@@ -264,12 +298,14 @@ Lorem ipsum dolor sit amet.</div>
 				
 				<div class="skill-block">
 					<div class="skill-img">
-						<img src="images/skill1.svg" alt="">
+						<svg class="skill-svg">
+								<use xlink:href="./images/svgcolor/spritecolor.svg#skill4"></use>
+							</svg>
 					</div>
 					<div class="skill-text">
-						<div class="skill-tit">
+						<h3 class="skill-tit">
 							Собранную информацию
-						</div>
+						</h3>
 						<div class="skill-txt">Lorem ipsum dolor sit 
 amet,consectetur adipiscing.
 Lorem ipsum dolor sit amet.</div>
@@ -287,20 +323,32 @@ Lorem ipsum dolor sit amet.</div>
 			</div>
 			<div class="video-info">
 				<ul class="info-list">
-					<li class="one">-4 модуля по 10 уроков</li>
-					<li class="two">-Учебные методички
+					<li class="one"><svg class="video-sprite">
+									<use xlink:href="./images/svg/sprite.svg#video1">	
+								</use>
+							</svg>-4 модуля по 10 уроков</li>
+					<li class="two"><svg class="video-sprite">
+									<use xlink:href="./images/svg/sprite.svg#video2">	
+								</use>
+							</svg>-Учебные методички
 к каждому уроку</li>
 				</ul>
 				<ul class="info-list">
-					<li class="three">-Уроки по 40-120 минут</li>
-					<li class="four">-Много полезной информации и практики</li>
+					<li class="three"><svg class="video-sprite">
+									<use xlink:href="./images/svg/sprite.svg#video3">	
+								</use>
+							</svg>-Уроки по 40-120 минут</li>
+					<li class="four"><svg class="video-sprite">
+									<use xlink:href="./images/svg/sprite.svg#video4">	
+								</use>
+							</svg>-Много полезной информации и практики</li>
 				</ul>
 			</div>
 			<div class="video-center">
 			
 				<div class="module">
 					<div class="module-top">
-						<iframe width="490" height="275" border-radius="10px" src="https://www.youtube.com/embed/DGjKDQc8LMM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						<iframe  border-radius="10px" src="https://www.youtube.com/embed/DGjKDQc8LMM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 					</div>
 					<div class="module-bott">
 						<div class="module-title">
@@ -328,7 +376,7 @@ Lorem ipsum dolor sit amet.</div>
 				
 				<div class="module">
 					<div class="module-top">
-						<iframe width="490" height="275" border-radius="10px" src="https://www.youtube.com/embed/DGjKDQc8LMM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						<iframe  border-radius="10px" src="https://www.youtube.com/embed/DGjKDQc8LMM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 					</div>
 					<div class="module-bott">
 						<div class="module-title">
@@ -356,7 +404,7 @@ Lorem ipsum dolor sit amet.</div>
 				
 				<div class="module">
 					<div class="module-top">
-						<iframe width="490" height="275" border-radius="10px" src="https://www.youtube.com/embed/DGjKDQc8LMM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						<iframe  border-radius="10px" src="https://www.youtube.com/embed/DGjKDQc8LMM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 					</div>
 					<div class="module-bott">
 						<div class="module-title">
@@ -384,7 +432,7 @@ Lorem ipsum dolor sit amet.</div>
 				
 				<div class="module">
 					<div class="module-top">
-						<iframe width="490" height="275" border-radius="10px" src="https://www.youtube.com/embed/DGjKDQc8LMM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						<iframe  border-radius="10px" src="https://www.youtube.com/embed/DGjKDQc8LMM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 					</div>
 					<div class="module-bott">
 						<div class="module-title">
@@ -419,64 +467,72 @@ Lorem ipsum dolor sit amet.</div>
 	<section class="stages">
 	<div class="container">
 		<div class="stages-body">
-			<div class="stages-title">КАК ПРОХОДИТ ОБУЧЕНИЕ</div>
-			<div class="stages-text">Я веду клиента от начала и до конца в отличии от конкурентов
-</div>
+			<h2 class="stages-title">КАК ПРОХОДИТ ОБУЧЕНИЕ</h2>
+			<h3 class="stages-text">Я веду клиента от начала и до конца в отличии от конкурентов
+</h3>
 			<div class="stages-content">
-				<div class="stages-block">
+			
+				<div class="stages-block line-stages">
 				
-					<div class="title-stages">
+					<h4 class="title-stages">
 						Обучение на онлайн
 платформе
-					</div>
+					</h4>
 					<div class="txt-stages">
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Facilisi risus ultricies tellus semper est leo. 
 					</div>
-					<div class="stages-img">
-					<img src="images/pana.svg" alt="">
+					<div class="stages-img-one">
+					<svg class="stages-svg">
+								<use xlink:href="./images/svgcolor/spritecolor.svg#stages1"></use>
+							</svg>
+					</div>
+				</div>
+				
+				<div class="stages-block line-stages-bott">
+					<h4 class="title-stages">
+						Обучение на онлайн
+платформе
+					</h4>
+					<div class="txt-stages">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Facilisi risus ultricies tellus semper est leo. 
+					</div>
+					<div class="stages-img-twoo">
+					<svg class="stages-svg">
+								<use xlink:href="./images/svgcolor/spritecolor.svg#stages2"></use>
+							</svg>
+					</div>
+				</div>
+				
+				<div class="stages-block line-stages">
+					<h4 class="title-stages">
+						Обучение на онлайн
+платформе
+					</h4>
+					<div class="txt-stages">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Facilisi risus ultricies tellus semper est leo. 
+					</div>
+					<div class="stages-img-three">
+					<svg class="stages-svg">
+								<use xlink:href="./images/svgcolor/spritecolor.svg#stages3"></use>
+							</svg>
 					</div>
 				</div>
 				
 				<div class="stages-block">
-					<div class="title-stages">
+					<h4 class="title-stages">
 						Обучение на онлайн
 платформе
-					</div>
+					</h4>
 					<div class="txt-stages">
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Facilisi risus ultricies tellus semper est leo. 
 					</div>
-					<div class="stages-img">
-					<img src="images/bro.svg" alt="">
-					</div>
-				</div>
-				
-				<div class="stages-block">
-					<div class="title-stages">
-						Обучение на онлайн
-платформе
-					</div>
-					<div class="txt-stages">
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Facilisi risus ultricies tellus semper est leo. 
-					</div>
-					<div class="stages-img">
-					<img src="images/amico.svg" alt="">
-					</div>
-				</div>
-				
-				<div class="stages-block">
-					<div class="title-stages">
-						Обучение на онлайн
-платформе
-					</div>
-					<div class="txt-stages">
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Facilisi risus ultricies tellus semper est leo. 
-					</div>
-					<div class="stages-img">
-						<img src="images/rafiki.svg" alt="">
+					<div class="stages-img-four">
+						<svg class="stages-svg">
+								<use xlink:href="./images/svgcolor/spritecolor.svg#stages4"></use>
+							</svg>
 					</div>
 					
 				</div>
-	
 	
 			</div>
 		</div>
@@ -485,23 +541,27 @@ Lorem ipsum dolor sit amet.</div>
 	<section class="components">
 	<div class="container">
 		<div class="components-body">
-			<div class="components-title">
+			<h2 class="components-title">
 				ЧТО НУЖНО ДЛЯ КУРСА?
-			</div>
-			<div class="components-text">
+			</h2>
+			<h3 class="components-text">
 				Желательно иметь это чтобы курс прошёл максимально полезно и плодотворно
-			</div>
+			</h3>
 			<div class="components-blocks">
 			
+			
 				<div class="components__block">
-				<div class="block-circle">
-					<div class="circle">
-						01
+					<div class="block-circle">
+						<div class="circle">
+							01
+						</div>
 					</div>
-				</div>
-					
-					<div class="title-comp">Интернет</div>
-					<div class="txt-comp">Желательно скорость интернета 5мбит/сек</div>
+						<div class="compon-txt">
+							<h4 class="title-comp">Космическое желание!</h4>
+						<div class="txt-comp">Большое желание изменить свою жизнь
+и очень много труда</div>
+						</div>
+						
 				</div>
 				
 				<div class="components__block">
@@ -510,9 +570,12 @@ Lorem ipsum dolor sit amet.</div>
 							02
 						</div>
 					</div>
-
-						<div class="title-comp">Системные требования</div>
-						<div class="txt-comp">Желательно скорость интернета 5мбит/сек</div>
+						<div class="compon-txt">
+							<h4 class="title-comp">Космическое желание!</h4>
+						<div class="txt-comp">Большое желание изменить свою жизнь
+и очень много труда</div>
+						</div>
+						
 				</div>
 				
 				<div class="components__block">
@@ -521,21 +584,23 @@ Lorem ipsum dolor sit amet.</div>
 							03
 						</div>
 					</div>
-
-						<div class="title-comp">Космическое желание!</div>
+						<div class="compon-txt">
+							<h4 class="title-comp">Космическое желание!</h4>
 						<div class="txt-comp">Большое желание изменить свою жизнь
 и очень много труда</div>
+						</div>
+						
 				</div>
 				
 			</div>
 			<div class="components-free">
-				<div class="components-title">
+				<h2 class="components-title">
 				Пробные уроки
-			</div>
-			<div class="components-text">
+			</h2>
+			<h3 class="components-text">
 				Так же на моём ютуб канале есть бесплатные
 уроки с которыми Вы можете ознакомиться.
-			</div>
+			</h3>
 			</div>
 		</div>
 	</div>
@@ -572,11 +637,369 @@ Lorem ipsum dolor sit amet.</div>
 		</div>
 	</div>
 </section>
+	<section class="tariffs">
+	<div class="container">
+		<div class="tariffs-body">
+			<h2 class="tariffs-title">
+				ТАРИФЫ
+			</h2>
+			<div class="tariffs-center">
+				<div class="tariffs-product">
+					<div class="product-title">
+						<div class="tariff-block">
+							Тариф
+						</div>
+						“Сам себе космонавт”
+					</div>
+					<div class="prod-center prod-one">
+						
+					<ul class="product-list">
+						<li>-Уроки по 40-120 минут</li>
+						<li>-5 модулей</li>
+						<li>-Проверка ДЗ</li>
+						<li>-Методички</li>
+						<li>-35 уроков</li>
+					</ul>
+					<div class="product-bott">
+						<span class="price">7500₽</span>
+						<button class="product-btn">ПРИОБРЕСТИ</button>
+					</div>
+					</div>
+				</div>
+				
+				<div class="tariffs-product">
+					<div class="product-title">
+						<div class="tariff-block">
+							Тариф
+						</div>
+						“Лётчик испытатель”
+					</div>
+					<div class="prod-center prod-twoo">
+						
+					<ul class="product-list">
+						<li>-Уроки по 40-120 минут</li>
+						<li>-5 модулей</li>
+						<li>-Проверка ДЗ</li>
+						<li>-Методички</li>
+						<li>-35 уроков</li>
+					</ul>
+					<div class="product-bott">
+						<span class="price">7500₽</span>
+						<button class="product-btn">ПРИОБРЕСТИ</button>
+					</div>
+					</div>
+				</div>
+				
+				<div class="tariffs-product">
+					<div class="product-title">
+						<div class="tariff-block">
+							Тариф
+						</div>
+						“Илон Маск”
+					</div>
+					<div class="prod-center prod-three">
+						
+					<ul class="product-list">
+						<li>-Уроки по 40-120 минут</li>
+						<li>-5 модулей</li>
+						<li>-Проверка ДЗ</li>
+						<li>-Методички</li>
+						<li>-35 уроков</li>
+					</ul>
+					<div class="product-bott">
+						<span class="price">7500₽</span>
+						<button class="product-btn">ПРИОБРЕСТИ</button>
+					</div>
+					</div>
+				</div>
+				
+				
+			</div>
+			<div class="tariffs-contacts">
+				<h2 class="tariffs-title">
+					КОНТАКТЫ
+				</h2>
+				<div class="tariffs-link-blocks">
+					<div class="link-blocks-tell">
+						
+						<div class="link-sprite">
+					<svg class="tariffs-sprite">
+							<use xlink:href="./images/svg/sprite.svg#tell">	
+						</use>
+					</svg>	
+					</div>
+						
+						<div class="link-left">
+							<div class="id">
+								@BorisRubtsov
+							</div>
+							<div class="subscribets">
+								5K<sup>подписчиков</sup>
+							</div>
+						</div>
+						<ul class="link-center">
+							<li>Lorem ipsum dolor</li>
+							<li>Lorem ipsum dolor</li>
+							<li>Lorem ipsum dolor</li>
+						</ul>
+						<div class="link-right">
+							<button class="link-btn">СМОТРЕТЬ
+								<svg class="arrow-sprite">
+									<use xlink:href="./images/svg/sprite.svg#Arrow-video">	
+									</use>
+								</svg>
+							</button>
+						</div>
+					</div>
+					
+					<div class="link-blocks-inst">
+					
+					<div class="link-sprite">
+					<svg class="tariffs-sprite">
+							<use xlink:href="./images/svg/sprite.svg#inst">	
+						</use>
+					</svg>	
+					</div>
+						
+						<div class="link-left">
+							<div class="id">
+								@borubtsov
+							</div>
+							<div class="subscribets">
+								5K<sup>подписчиков</sup>
+							</div>
+						</div>
+						<ul class="link-center">
+							<li>Lorem ipsum dolor</li>
+							<li>Lorem ipsum dolor</li>
+							<li>Lorem ipsum dolor</li>
+						</ul>
+						<div class="link-right">
+							<button class="link-btn">СМОТРЕТЬ
+								<svg class="arrow-sprite">
+									<use xlink:href="./images/svg/sprite.svg#Arrow-video">	
+									</use>
+								</svg>
+							</button>
+						</div>
+					</div>
+					
+					<div class="link-blocks-youtube">
+					
+					<div class="link-sprite">
+					<svg class="tariffs-sprite">
+							<use xlink:href="./images/svg/sprite.svg#youtube">	
+						</use>
+					</svg>	
+					</div>
+					
+					
+						<div class="link-left">
+							<div class="id">
+								Rubtsov Boris
+							</div>
+							<div class="subscribets">
+								5K<sup>подписчиков</sup>
+							</div>
+						</div>
+						<ul class="link-center">
+							<li>Lorem ipsum dolor</li>
+							<li>Lorem ipsum dolor</li>
+							<li>Lorem ipsum dolor</li>
+						</ul>
+						<div class="link-right">
+							<button class="link-btn">СМОТРЕТЬ
+								<svg class="arrow-sprite">
+									<use xlink:href="./images/svg/sprite.svg#Arrow-video">	
+									</use>
+								</svg>
+							</button>
+						</div>
+					</div>
+					
+					
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+	<section class="faq">
+	<div class="container">
+		<div class="faq-body">
+			<h2 class="faq-title">
+				F.A.Q.
+			</h2>
+			<div class="faq-center">
+				
+<div class="accordion-container">
+  <div class="accord-block">
+    <div class="ac-header">
+    
+    
+ <button class="btn-accord">А точно я буду все уметь делать? 
+	<svg class="icon-arrow-one">
+		<use xlink:href="./images/svg/sprite.svg#faq"></use>
+	</svg>
+</button>
+     
+      
+    </div>
+    <div class="accord-bott">
+      <p class="ac-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. A magna pharetra, at pellentesque facilisi luctus risus. Proin massa dictum sit ullamcorper.Lorem ipsum dolor sit amet, consectetur adipiscing elit. A magna pharetra, at pellentesque facilisi luctus risus. Proin massa dictum sit ullamcorper.</p>
+    </div>
+  </div>
+
+  <div class="accord-block">
+    <div class="ac-header">
+     
+      <button class="btn-accord">Такие курсы можно найти в интернете же? <svg class="icon-arrow-one">
+		<use xlink:href="./images/svg/sprite.svg#faq"></use>
+	</svg></button>
+    </div>
+    <div class="accord-bott">
+      <p class="ac-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+  </div>
+
+  <div class="accord-block">
+    <div class="ac-header">
+     
+      <button class="btn-accord">А почему нет в курсе такой то темы? <svg class="icon-arrow-one">
+		<use xlink:href="./images/svg/sprite.svg#faq"></use>
+	</svg></button>
+    </div>
+    <div class="accord-bott">
+      <p class="ac-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. A magna pharetra, at pellentesque facilisi luctus risus. Proin massa dictum sit ullamcorper.Lorem ipsum dolor sit amet, consectetur adipiscing elit. A magna pharetra, at pellentesque facilisi luctus risus. Proin massa dictum sit ullamcorper.</p>
+    </div>
+  </div>
+  
+   <div class="accord-block">
+    <div class="ac-header">
+     
+      <button class="btn-accord">Почему такая высокая цена? <svg class="icon-arrow-one">
+		<use xlink:href="./images/svg/sprite.svg#faq"></use>
+	</svg></button>
+    </div>
+    <div class="accord-bott">
+      <p class="ac-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+  </div>
+  
+   <div class="accord-block">
+    <div class="ac-header">
+     
+      <button class="btn-accord">Со скольки лет можно приобретать вейпы?<svg class="icon-arrow-one">
+		<use xlink:href="./images/svg/sprite.svg#faq"></use>
+	</svg></button>
+    </div>
+    <div class="accord-bott">
+      <p class="ac-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. A magna pharetra, at pellentesque facilisi luctus risus. Proin massa dictum sit ullamcorper.Lorem ipsum dolor sit amet, consectetur adipiscing elit. A magna pharetra, at pellentesque facilisi luctus risus. Proin massa dictum sit ullamcorper.</p>
+    </div>
+  </div>
+  
+   <div class="accord-block">
+    <div class="ac-header">
+     
+      <button class="btn-accord">Если я совсем новичёк, подойдёт ли мне этот курс?<svg class="icon-arrow-one">
+		<use xlink:href="./images/svg/sprite.svg#faq"></use>
+	</svg></button>
+    </div>
+    <div class="accord-bott">
+      <p class="ac-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. A magna pharetra, at pellentesque facilisi luctus risus. Proin massa dictum sit ullamcorper.Lorem ipsum dolor sit amet, consectetur adipiscing elit. A magna pharetra, at pellentesque facilisi luctus risus. Proin massa dictum sit ullamcorper.</p>
+    </div>
+  </div>
+</div>
+           	
+			</div>
+		</div>
+	</div>
+</section>
 	
 	
 </main>
 
-	
+	<footer class="footer">
+	<div class="container">
+		<div class="footer-body">
+			<div class="footer-list">
+			
+				<div class="footer-logo">
+				
+					<a href="#"><img src="images/logo.svg" alt=""></a>
+					
+				</div>
+				
+			<div class="neworks">
+			
+				<a href="#" class="network-contacts">
+					
+						<svg class="footer-svg">
+							<use xlink:href="./images/svg/sprite.svg#foot-tell"></use>
+						</svg>
+				</a>
+				
+				<a href="#" class="network-contacts">
+					
+						<svg class="footer-svg">
+							<use xlink:href="./images/svg/sprite.svg#inst"></use>
+						</svg>
+				</a>
+				
+				<a href="#" class="network-contacts">
+					
+						<svg class="footer-svg">
+							<use xlink:href="./images/svg/sprite.svg#foot-vect"></use>
+						</svg>
+				</a>
+				
+				<a href="#" class="network-contacts">
+					
+						<svg class="footer-svg">
+							<use xlink:href="./images/svg/sprite.svg#foot-be"></use>
+						</svg>
+				</a>
+				
+				<a href="#" class="network-contacts">
+					
+						<svg class="footer-svg">
+							<use xlink:href="./images/svg/sprite.svg#youtube"></use>
+						</svg>
+				</a>
+				
+			</div>
+			
+				<div class="footer-bott">
+					
+				<a class="f-mail" href="#">pochta@gmail.com</a>
+				<a href="#">Договор-оферта</a>
+				<a href="#">Политика конфеденциальности</a>
+				</div>
+			</div>
+			
+			<div class="footer-list">
+				<ul class="footer-id">
+					<li><a href="#">Автор</a></li>
+					<li><a href="#">Курс</a></li>
+					<li><a href="#">Отзывы</a></li>
+					<li><a href="#">Бесплатные уроки</a></li>
+				</ul>
+				<div class="payment">
+					<div class="payment-block"></div>
+					<div class="payment-block"></div>
+					<div class="payment-block"></div>
+				</div>
+				<div class="payment-text">Способы оплаты</div>
+			</div>
+			
+			<div class="footer-list">
+				<div class="footer-name">ИП Рубцов Борис</div>
+				<div class="footer-tell">Телефон: <a href="#"> 8 (800) 888-88-88</a> </div>
+				<div class="address">Адрес: Город, Улица, Дом</div>
+				<div class="inn">ИНН: 123456789876</div>
+			</div>
+		</div>
+	</div>
+</footer>
 
 <script src="scripts/main.js"></script>  
 </body>
