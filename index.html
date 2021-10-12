@@ -8,7 +8,39 @@
 </head>
 <body class="body">
 
-	<header class="header">
+	 <div class="modal micromodal-slide" id="modal-1" aria-hidden="true">
+    <div class="modal__overlay" tabindex="-1" data-custom-close>
+      <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
+        <header class="modal__content">
+         
+			
+         <iframe id="iframe-modal" src=""></iframe>
+          <button class="modal__close" aria-label="Close modal" data-custom-close></button>
+        </header>
+       
+      </div>
+    </div>
+  </div>
+<!--===========-->
+
+ <div class="modal micromodal-slide" id="modal-2" aria-hidden="true">
+    <div class="modal__overlay" tabindex="-1" data-custom-close>
+      <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
+        <header class="modal__content">
+         
+			
+         <img id="iframe-modal-img" src="">
+          <button class="modal__close" aria-label="Close modal" data-custom-close></button>
+        </header>
+       
+      </div>
+    </div>
+  </div>
+<!--===========-->
+
+
+
+<header class="header">
 	<div class="container">
 		<div class="header-body">
 			<div class="header-menu">
@@ -44,9 +76,15 @@
 						<h2 class="header-subtitle">В After Effects и Premiere Pro</h2>
 						<div class="header-txt">
 							Вы можете посмотреть небольшой промо-ролик на котором я в кратце обьясню суть курса
-							<button class="player"></button>
+						
+							<button  id="player" class="pulse-button" aria-label="Close modal" data-custom-open="modal-1"  data-video="https://www.youtube.com/embed/7lyF8GZ_fNk"> </button>
 						</div>
-						<img src="images/macbg.png" alt="">
+						
+						<div class="video-tell-mac">
+							<img src="images/macbg.png" alt="">
+						<iframe src="https://www.youtube.com/embed/7lyF8GZ_fNk" frameborder="0"></iframe>
+						</div>
+						
 						<div class="head-list">
 							<div class="format">
 							<svg class="head1">
@@ -91,6 +129,15 @@
 		</div>
 	</div>
 </header>
+
+
+
+
+
+
+
+
+
 	
 <main>
 	<section class="autor">
@@ -349,7 +396,7 @@ Lorem ipsum dolor sit amet.</div>
 			
 				<div class="module">
 					<div class="module-top">
-						<iframe  border-radius="10px" src="https://www.youtube.com/embed/DGjKDQc8LMM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						
 					</div>
 					<div class="module-bott">
 						<div class="module-title">
@@ -377,7 +424,7 @@ Lorem ipsum dolor sit amet.</div>
 				
 				<div class="module">
 					<div class="module-top">
-						<iframe  border-radius="10px" src="https://www.youtube.com/embed/DGjKDQc8LMM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						
 					</div>
 					<div class="module-bott">
 						<div class="module-title">
@@ -405,7 +452,7 @@ Lorem ipsum dolor sit amet.</div>
 				
 				<div class="module">
 					<div class="module-top">
-						<iframe  border-radius="10px" src="https://www.youtube.com/embed/DGjKDQc8LMM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						
 					</div>
 					<div class="module-bott">
 						<div class="module-title">
@@ -433,7 +480,7 @@ Lorem ipsum dolor sit amet.</div>
 				
 				<div class="module">
 					<div class="module-top">
-						<iframe  border-radius="10px" src="https://www.youtube.com/embed/DGjKDQc8LMM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						
 					</div>
 					<div class="module-bott">
 						<div class="module-title">
@@ -553,14 +600,13 @@ Lorem ipsum dolor sit amet.</div>
 			
 				<div class="components__block">
 					<div class="block-circle">
-						<div class="circle">
+	<div class="circle">
 							01
 						</div>
 					</div>
 						<div class="compon-txt">
-							<h4 class="title-comp">Космическое желание!</h4>
-						<div class="txt-comp">Большое желание изменить свою жизнь
-и очень много труда</div>
+							<h4 class="title-comp">Интернет</h4>
+						<div class="txt-comp">Желательно скорость интернета 5мбит/сек</div>
 						</div>
 						
 				</div>
@@ -572,9 +618,14 @@ Lorem ipsum dolor sit amet.</div>
 						</div>
 					</div>
 						<div class="compon-txt">
-							<h4 class="title-comp">Космическое желание!</h4>
-						<div class="txt-comp">Большое желание изменить свою жизнь
-и очень много труда</div>
+							<h4 class="title-comp">Системные требования</h4>
+						<ul class="txt-comp">
+							<li>-Процессор: intel core i5/
+radeon adc</li>
+							<li>-Видеокарта: nvidea 3080</li>
+							<li>-ОЗУ: 32гб</li>
+							<li>-SSD: 5тб</li>
+						</ul>
 						</div>
 						
 				</div>
@@ -604,13 +655,13 @@ Lorem ipsum dolor sit amet.</div>
 			</h3>
 			<div class="conponents-video">
 				<div class="conponents-video-top">
-					<div class="block-comp-video-top"><button></button></div>
-					<div class="block-comp-video-top"><button></button></div>
-					<div class="block-comp-video-top"><button></button></div>
+					<div class="block-comp-video-top"><button  aria-label="Close modal" data-custom-open="modal-1"  data-video="https://www.youtube.com/embed/buRTjC81_9c"> </button></div>
+					<div class="block-comp-video-top"><button  aria-label="Close modal" data-custom-open="modal-1"  data-video="https://www.youtube.com/embed/7lyF8GZ_fNk"> </button></div>
+					<div class="block-comp-video-top"><button aria-label="Close modal" data-custom-open="modal-1"  data-video="https://www.youtube.com/embed/7lyF8GZ_fNk"> </button></div>
 				</div>
 				<div class="conponents-video-bottom">
-					<div class="block-comp-video-bottom"><button></button></div>
-					<div class="block-comp-video-bottom"><button></button></div>
+					<div class="block-comp-video-bottom"><button   aria-label="Close modal" data-custom-open="modal-1"  data-video="https://www.youtube.com/embed/7lyF8GZ_fNk"> </button></div>
+					<div class="block-comp-video-bottom"><button  aria-label="Close modal" data-custom-open="modal-1"  data-video="https://www.youtube.com/embed/7lyF8GZ_fNk"> </button></div>
 				</div>
 			</div>
 			
@@ -625,7 +676,19 @@ Lorem ipsum dolor sit amet.</div>
 		<div class="swiper-slide">
 			<div class="comp-images-swap">
 				<img src="" alt="">
-				<button class="loop-btn"><svg class="loop-svg">
+				<button class="loop-btn" aria-label="Close modal" data-images="./images/Comp.png" data-custom-open="modal-2" >
+						<svg class="loop-svg">
+							<use xlink:href="./images/svg/sprite.svg#loop"></use>
+						</svg>
+				</button>
+				
+			</div>
+</div>
+
+		<div class="swiper-slide">
+			<div class="comp-images-swap">
+				<img src="" alt="">
+				<button class="loop-btn" aria-label="Close modal" data-custom-open="modal-2" data-images="./images/Comp.png"><svg class="loop-svg">
 							<use xlink:href="./images/svg/sprite.svg#loop"></use>
 						</svg></button>
 				
@@ -635,7 +698,7 @@ Lorem ipsum dolor sit amet.</div>
 		<div class="swiper-slide">
 			<div class="comp-images-swap">
 				<img src="" alt="">
-				<button class="loop-btn"><svg class="loop-svg">
+				<button class="loop-btn" aria-label="Close modal" data-custom-open="modal-2" data-images="./images/Comp.png"><svg class="loop-svg">
 							<use xlink:href="./images/svg/sprite.svg#loop"></use>
 						</svg></button>
 				
@@ -645,7 +708,7 @@ Lorem ipsum dolor sit amet.</div>
 		<div class="swiper-slide">
 			<div class="comp-images-swap">
 				<img src="" alt="">
-				<button class="loop-btn"><svg class="loop-svg">
+				<button class="loop-btn" aria-label="Close modal" data-custom-open="modal-2" data-images="./images/product1.png"><svg class="loop-svg">
 							<use xlink:href="./images/svg/sprite.svg#loop"></use>
 						</svg></button>
 				
@@ -655,7 +718,7 @@ Lorem ipsum dolor sit amet.</div>
 		<div class="swiper-slide">
 			<div class="comp-images-swap">
 				<img src="" alt="">
-				<button class="loop-btn"><svg class="loop-svg">
+				<button class="loop-btn" aria-label="Close modal" data-custom-open="modal-2" data-images="./images/Comp.png"><svg class="loop-svg">
 							<use xlink:href="./images/svg/sprite.svg#loop"></use>
 						</svg></button>
 				
@@ -665,7 +728,7 @@ Lorem ipsum dolor sit amet.</div>
 		<div class="swiper-slide">
 			<div class="comp-images-swap">
 				<img src="" alt="">
-				<button class="loop-btn"><svg class="loop-svg">
+				<button class="loop-btn" aria-label="Close modal" data-custom-open="modal-2" data-images="./images/Comp.png"><svg class="loop-svg">
 							<use xlink:href="./images/svg/sprite.svg#loop"></use>
 						</svg></button>
 				
@@ -675,7 +738,7 @@ Lorem ipsum dolor sit amet.</div>
 		<div class="swiper-slide">
 			<div class="comp-images-swap">
 				<img src="" alt="">
-				<button class="loop-btn"><svg class="loop-svg">
+				<button class="loop-btn" aria-label="Close modal" data-custom-open="modal-2" data-images="./images/Comp.png"><svg class="loop-svg">
 							<use xlink:href="./images/svg/sprite.svg#loop"></use>
 						</svg></button>
 				
@@ -685,47 +748,7 @@ Lorem ipsum dolor sit amet.</div>
 		<div class="swiper-slide">
 			<div class="comp-images-swap">
 				<img src="" alt="">
-				<button class="loop-btn"><svg class="loop-svg">
-							<use xlink:href="./images/svg/sprite.svg#loop"></use>
-						</svg></button>
-				
-			</div>
-</div>
-
-		<div class="swiper-slide">
-			<div class="comp-images-swap">
-				<img src="" alt="">
-				<button class="loop-btn"><svg class="loop-svg">
-							<use xlink:href="./images/svg/sprite.svg#loop"></use>
-						</svg></button>
-				
-			</div>
-</div>
-
-		<div class="swiper-slide">
-			<div class="comp-images-swap">
-				<img src="" alt="">
-				<button class="loop-btn"><svg class="loop-svg">
-							<use xlink:href="./images/svg/sprite.svg#loop"></use>
-						</svg></button>
-				
-			</div>
-</div>
-
-		<div class="swiper-slide">
-			<div class="comp-images-swap">
-				<img src="" alt="">
-				<button class="loop-btn"><svg class="loop-svg">
-							<use xlink:href="./images/svg/sprite.svg#loop"></use>
-						</svg></button>
-				
-			</div>
-</div>
-
-		<div class="swiper-slide">
-			<div class="comp-images-swap">
-				<img src="" alt="">
-				<button class="loop-btn"><svg class="loop-svg">
+				<button class="loop-btn" aria-label="Close modal" data-custom-open="modal-2" data-images="./images/Comp.png"><svg class="loop-svg">
 							<use xlink:href="./images/svg/sprite.svg#loop"></use>
 						</svg></button>
 				
@@ -740,40 +763,12 @@ Lorem ipsum dolor sit amet.</div>
   	<div class="swiper-scrollbar"></div>
   	
 </div>
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
 			</div>
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
 			</div>
 		</div>
 	</div>
 </section>
+
 	<section class="slider">
 	<div class="container">
 		<div class="slider-body">
@@ -788,6 +783,30 @@ Lorem ipsum dolor sit amet.</div>
   <div class="swiper-wrapper">
     <!-- Slides -->
     <div class="swiper-slide">
+    	<div class="wiper-body"><div class="left-swiper">
+    	<div class="icon-img"><img src="" alt=""></div>
+    		<div class="swiper-title">Михаил</div>
+    		<div class="contact-swip">
+    		
+    			<a href="#"><svg class="swip-svg">
+							<use xlink:href="./images/svg/sprite.svg#foot-tell"></use>
+						</svg></a>
+						
+    			<a href="#"><svg class="swip-svg">
+							<use xlink:href="./images/svg/sprite.svg#foot-tell"></use>
+						</svg></a>
+						
+    			<a href="#"><svg class="swip-svg">
+							<use xlink:href="./images/svg/sprite.svg#foot-tell"></use>
+						</svg></a>
+						
+    		</div>
+    	</div>
+    	<div class="right-swiper">Lorem ipsum dolor sit amet, consectetur adipiscing elit. A magna pharetra, at pellentesque facilisi luctus risus. Proin massa dictum sit ullamcorper.Lorem ipsum dolor sit amet, consectetur adipiscing elit. A magna pharetra, at pellentesque facilisi luctus risus. Proin massa dictum sit ullamcorper.</div></div>
+    	
+    </div>
+   
+   <div class="swiper-slide">
     	<div class="wiper-body"><div class="left-swiper">
     	<div class="icon-img"><img src="" alt=""></div>
     		<div class="swiper-title">Михаил</div>
@@ -1164,18 +1183,6 @@ Lorem ipsum dolor sit amet.</div>
     </div>
     <div class="accord-bott">
       <p class="ac-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-    </div>
-  </div>
-  
-   <div class="accord-block">
-    <div class="ac-header">
-     
-      <button class="btn-accord">Со скольки лет можно приобретать вейпы?<svg class="icon-arrow-one">
-		<use xlink:href="./images/svg/sprite.svg#faq"></use>
-	</svg></button>
-    </div>
-    <div class="accord-bott">
-      <p class="ac-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. A magna pharetra, at pellentesque facilisi luctus risus. Proin massa dictum sit ullamcorper.Lorem ipsum dolor sit amet, consectetur adipiscing elit. A magna pharetra, at pellentesque facilisi luctus risus. Proin massa dictum sit ullamcorper.</p>
     </div>
   </div>
   
