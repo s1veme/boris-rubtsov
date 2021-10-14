@@ -40,29 +40,31 @@
 
 
 
-<header class="header">
+<header class="header lazy" data-bg = "./images/bg-h.png" >
 	<div class="container">
 		<div class="header-body">
 			<div class="header-menu">
 				<div class="logo">
-					<img src="images/logo.svg" alt="logo">
+					
+					<img  alt="Ленивое изображение" class="lazy" data-src= "./images/logo.svg" >
+					
 				</div>
 					<button id="burger">
-				<span class="bug-top"></span>
-				<span class="bug-mid"></span>
-				<span class="bug-bot"></span>
+				<span class="btn-line"></span>
+				<span class="btn-line"></span>
+				<span class="btn-line"></span>
 			</button>
 				<nav class="header__menu">
 					<ul class="header__list">
 					    <li class="menu-text-tell">Меню</li>
-						<li><a href="#" class="header__link">Автор</a></li>
-						<li><a href="#" class="header__link">Курс</a></li>
-						<li><a href="#" class="header__link">Отзывы</a></li>
-						<li><a href="#" class="header__link">FAQ</a></li>
+						<li><a href="#author-part" class="header__link">Автор</a></li>
+						<li><a href="#video-part" class="header__link">Курс</a></li>
+						<li><a href="#slider-part" class="header__link">Отзывы</a></li>
+						<li><a href="#faq-part" class="header__link">FAQ</a></li>
 					</ul>
 					<div class="contacts">
-						<a href="#" class="tell">8 (800) 888-88-88</a>
-						<a href="#" class="mail">pochta@gmail.com</a>
+						<a href="tel:+88008888888" class="tell">8 (800) 888-88-88</a>
+						<a href="mailto:pochta@gmail.com" class="mail">pochta@gmail.com</a>
 					</div>
 				</nav>
 			
@@ -70,8 +72,7 @@
 			<div class="header-center">
 					<div class="header-left">
 						<h1 class="header-title">
-							НАУЧУ МОУШН-ДИЗАЙНУ
-И МОНТАЖУ ВИДЕО
+							Научу моушн-дизайну и монтажу видео
 						</h1>
 						<h2 class="header-subtitle">В After Effects и Premiere Pro</h2>
 						<div class="header-txt">
@@ -81,7 +82,8 @@
 						</div>
 						
 						<div class="video-tell-mac">
-							<img src="images/macbg.png" alt="">
+							
+							<img  alt="Ленивое изображение" class="lazy" data-src= "./images/macbg.png" >
 						<iframe src="https://www.youtube.com/embed/7lyF8GZ_fNk" frameborder="0"></iframe>
 						</div>
 						
@@ -110,7 +112,7 @@
 							</div>
 							<div class="duration">
 							<svg class="head3">
-								<use xlink:href="./images/svg/sprite.svg#clock2"></use>
+								<use xlink:href="./images/svgcolor/spritecolor.svg#clock"></use>
 							</svg>
 								<div class="title">
 									Длительность:
@@ -120,10 +122,11 @@
 								</div>
 							</div>
 						</div>
-						<button class="btn-head">ЗАПИСАТЬСЯ НА КУРС</button>
+						<button class="btn-head">Записаться на курс</button>
 					</div>
 					<div class="header-right">
-						<img  class="header-img"  src="images/author-header.png" alt="">
+						
+						<img  alt="Ленивое изображение" class="header-img lazy" data-src= "./images/author-header.png" >
 					</div>
 				</div>
 		</div>
@@ -140,13 +143,17 @@
 
 	
 <main>
-	<section class="autor">
+	<section class="autor" id="author-part">
 
 	<div class="container">
 		<div class="autor-body">
 			<div class="autor-left">
-				<h2 class="autor-title">АВТОР КУРСА</h2>
-				<div class="autor-img"><img src="images/author_final.svg" alt=""></div>
+				<h2 class="autor-title">Автор курса</h2>
+				<div class="autor-img">
+				
+				<img  alt="Ленивое изображение" class="header-img lazy" data-src= "./images/author_final.svg" >
+				
+				</div>
 			</div>
 			<div class="autor-right">
 				<h3 class="name">
@@ -174,11 +181,12 @@
 		</div>
 	</div>
 </section>
-	<section class="stars">
+	<section class="stars" data_bg="bg">
 	<div class="container">
 		<div class="stars-body">
 			<h2 class="stars-title">
-				ДЛЯ КОГО ПОДОЙДЁТ ДАННЫЙ КУРС?
+				
+				Для кого подойдет данный курс?
 			</h2>
 			<div class="start-center">
 				<ul class="starts-blocks">
@@ -256,7 +264,7 @@
 								</div>
 							</div>
 							<div class="right-start"><svg class="star-svg">
-								<use xlink:href="./images/svgcolor/spritecolor.svg#star4"></use>
+								<use xlink:href="./images/svgcolor/spritecolor.svg#star5"></use>
 							</svg></div>
 						</div>
 					</li>
@@ -284,17 +292,18 @@
 				</ul>
 			</div>
 			<div class="stars-bott">
-				<button class="btn-stars">ПОСМОТРЕТЬ ПРОГРАММУ</button>
+				<button class="btn-stars">Посмотреть программу</button>
 			</div>
 			
 		</div>
 	</div>
 </section>
-	<section class="skill">
+	<section class="skill" data_bg="bg">
 	<div class="container">
 		<div class="skill-body">
 			<div class="skill-title">
-				ЧТО ВЫ ПОЛУЧИТЕ?
+			
+				Что вы получите?
 			</div>
 			<div class="skill-blocks">
 				<div class="skill-block">
@@ -363,11 +372,12 @@ Lorem ipsum dolor sit amet.</div>
 		</div>
 	</div>
 </section>
-	<section class="video">
+	<section class="video" id="video-part" data_bg="bg">
 	<div class="container">
 		<div class="video-body">
 			<div class="video-title">
-				ЧТО БУДЕТ НА КУРСЕ?
+				
+				Что будет на курсе?
 			</div>
 			<div class="video-info">
 				<ul class="info-list">
@@ -383,8 +393,7 @@ Lorem ipsum dolor sit amet.</div>
 				</ul>
 				<ul class="info-list">
 					<li class="three"><svg class="video-sprite">
-									<use xlink:href="./images/svg/sprite.svg#video3">	
-								</use>
+									<use xlink:href="./images/svgcolor/spritecolor.svg#clock"></use>
 							</svg>-Уроки по 40-120 минут</li>
 					<li class="four"><svg class="video-sprite">
 									<use xlink:href="./images/svg/sprite.svg#video4">	
@@ -512,10 +521,10 @@ Lorem ipsum dolor sit amet.</div>
 		</div>
 	</div>
 </section>
-	<section class="stages">
+	<section class="stages" data_bg="bg">
 	<div class="container">
 		<div class="stages-body">
-			<h2 class="stages-title">КАК ПРОХОДИТ ОБУЧЕНИЕ</h2>
+			<h2 class="stages-title">Как проходит обучение</h2>
 			<h3 class="stages-text">Я веду клиента от начала и до конца в отличии от конкурентов
 </h3>
 			<div class="stages-content">
@@ -586,11 +595,12 @@ Lorem ipsum dolor sit amet.</div>
 		</div>
 	</div>
 </section>
-	<section class="components">
+	<section class="components" id="components-part" data_bg="bg">
 	<div class="container">
 		<div class="components-body">
 			<h2 class="components-title">
-				ЧТО НУЖНО ДЛЯ КУРСА?
+				
+				Что нужно для курса?
 			</h2>
 			<h3 class="components-text">
 				Желательно иметь это чтобы курс прошёл максимально полезно и плодотворно
@@ -653,16 +663,26 @@ radeon adc</li>
 				Так же на моём ютуб канале есть бесплатные
 уроки с которыми Вы можете ознакомиться.
 			</h3>
+			
+			
+			
+			
 			<div class="conponents-video">
-				<div class="conponents-video-top">
-					<div class="block-comp-video-top"><button  aria-label="Close modal" data-custom-open="modal-1"  data-video="https://www.youtube.com/embed/buRTjC81_9c"> </button></div>
-					<div class="block-comp-video-top"><button  aria-label="Close modal" data-custom-open="modal-1"  data-video="https://www.youtube.com/embed/7lyF8GZ_fNk"> </button></div>
-					<div class="block-comp-video-top"><button aria-label="Close modal" data-custom-open="modal-1"  data-video="https://www.youtube.com/embed/7lyF8GZ_fNk"> </button></div>
-				</div>
-				<div class="conponents-video-bottom">
-					<div class="block-comp-video-bottom"><button   aria-label="Close modal" data-custom-open="modal-1"  data-video="https://www.youtube.com/embed/7lyF8GZ_fNk"> </button></div>
-					<div class="block-comp-video-bottom"><button  aria-label="Close modal" data-custom-open="modal-1"  data-video="https://www.youtube.com/embed/7lyF8GZ_fNk"> </button></div>
-				</div>
+			
+			
+			
+			        <div class="grid">
+  <span class="grid-video div1"><button  aria-label="Close modal" data-custom-open="modal-1"  data-video="https://www.youtube.com/embed/buRTjC81_9c"> </button></span>
+  <span class="grid-video div2"><button  aria-label="Close modal" data-custom-open="modal-1"  data-video="https://www.youtube.com/embed/buRTjC81_9c"> </button></span>
+  <span class="grid-video div3"><button  aria-label="Close modal" data-custom-open="modal-1"  data-video="https://www.youtube.com/embed/buRTjC81_9c"> </button></span>
+  <span class="grid-video div4"><button  aria-label="Close modal" data-custom-open="modal-1"  data-video="https://www.youtube.com/embed/buRTjC81_9c"> </button></span>
+  <span class="grid-video div5"><button  aria-label="Close modal" data-custom-open="modal-1"  data-video="https://www.youtube.com/embed/buRTjC81_9c"> </button></span>
+</div>
+			
+			
+                    
+			
+				
 			</div>
 			
 		
@@ -769,11 +789,11 @@ radeon adc</li>
 	</div>
 </section>
 
-	<section class="slider">
+	<section class="slider" id="slider-part" data_bg="bg">
 	<div class="container">
 		<div class="slider-body">
 			<div class="slider-title">
-				ОТЗЫВЫ
+				Отзывы
 			</div>
 			<div class="slider-content">
 				
@@ -783,101 +803,159 @@ radeon adc</li>
   <div class="swiper-wrapper">
     <!-- Slides -->
     <div class="swiper-slide">
-    	<div class="wiper-body"><div class="left-swiper">
-    	<div class="icon-img"><img src="" alt=""></div>
-    		<div class="swiper-title">Михаил</div>
-    		<div class="contact-swip">
-    		
-    			<a href="#"><svg class="swip-svg">
-							<use xlink:href="./images/svg/sprite.svg#foot-tell"></use>
-						</svg></a>
-						
-    			<a href="#"><svg class="swip-svg">
-							<use xlink:href="./images/svg/sprite.svg#foot-tell"></use>
-						</svg></a>
-						
-    			<a href="#"><svg class="swip-svg">
-							<use xlink:href="./images/svg/sprite.svg#foot-tell"></use>
-						</svg></a>
-						
-    		</div>
+    	<div class="wiper-body">
+    	
+           
+           
+            <div class="left-swiper">
+            <div class="icon-img"><img src="" alt=""></div>
+                <div class="swiper-title">Михаил</div>
+
+            </div>
+             <div class="contact-swip">
+
+                    <a href="#"><svg class="swip-svg">
+                                <use xlink:href="./images/svg/sprite.svg#foot-tell"></use>
+                            </svg></a>
+
+                    <a href="#"><svg class="swip-svg">
+                                <use xlink:href="./images/svg/sprite.svg#foot-tell"></use>
+                            </svg></a>
+
+                    <a href="#"><svg class="swip-svg">
+                                <use xlink:href="./images/svg/sprite.svg#foot-tell"></use>
+                            </svg></a>
+
+                </div>
+              <div class="right-swiper">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. A magna pharetra, at pellentesque facilisi luctus risus. Proin massa dictum sit ullamcorper.Lorem ipsum dolor sit amet, consectetur adipiscing elit. A magna pharetra, at pellentesque facilisi luctus risus. Proin massa dictum sit ullamcorper.
+</div>
+               
+            
+         
+
+       
+       
     	</div>
-    	<div class="right-swiper">Lorem ipsum dolor sit amet, consectetur adipiscing elit. A magna pharetra, at pellentesque facilisi luctus risus. Proin massa dictum sit ullamcorper.Lorem ipsum dolor sit amet, consectetur adipiscing elit. A magna pharetra, at pellentesque facilisi luctus risus. Proin massa dictum sit ullamcorper.</div></div>
+    	
+    </div>
+    
+    <div class="swiper-slide">
+    	<div class="wiper-body">
+    	
+           
+           
+            <div class="left-swiper">
+            <div class="icon-img"><img src="" alt=""></div>
+                <div class="swiper-title">Михаил</div>
+
+            </div>
+             <div class="contact-swip">
+
+                    <a href="#"><svg class="swip-svg">
+                                <use xlink:href="./images/svg/sprite.svg#foot-tell"></use>
+                            </svg></a>
+
+                    <a href="#"><svg class="swip-svg">
+                                <use xlink:href="./images/svg/sprite.svg#foot-tell"></use>
+                            </svg></a>
+
+                    <a href="#"><svg class="swip-svg">
+                                <use xlink:href="./images/svg/sprite.svg#foot-tell"></use>
+                            </svg></a>
+
+                </div>
+              <div class="right-swiper">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. A magna pharetra, at pellentesque facilisi luctus risus. Proin massa dictum sit ullamcorper.Lorem ipsum dolor sit amet, consectetur adipiscing elit. A magna pharetra, at pellentesque facilisi luctus risus. Proin massa dictum sit ullamcorper.
+</div>
+               
+            
+         
+
+       
+       
+    	</div>
     	
     </div>
    
-   <div class="swiper-slide">
-    	<div class="wiper-body"><div class="left-swiper">
-    	<div class="icon-img"><img src="" alt=""></div>
-    		<div class="swiper-title">Михаил</div>
-    		<div class="contact-swip">
-    		
-    			<a href="#"><svg class="swip-svg">
-							<use xlink:href="./images/svg/sprite.svg#foot-tell"></use>
-						</svg></a>
-						
-    			<a href="#"><svg class="swip-svg">
-							<use xlink:href="./images/svg/sprite.svg#foot-tell"></use>
-						</svg></a>
-						
-    			<a href="#"><svg class="swip-svg">
-							<use xlink:href="./images/svg/sprite.svg#foot-tell"></use>
-						</svg></a>
-						
-    		</div>
+    <div class="swiper-slide">
+    	<div class="wiper-body">
+    	
+           
+           
+            <div class="left-swiper">
+            <div class="icon-img"><img src="" alt=""></div>
+                <div class="swiper-title">Михаил</div>
+
+            </div>
+             <div class="contact-swip">
+
+                    <a href="#"><svg class="swip-svg">
+                                <use xlink:href="./images/svg/sprite.svg#foot-tell"></use>
+                            </svg></a>
+
+                    <a href="#"><svg class="swip-svg">
+                                <use xlink:href="./images/svg/sprite.svg#foot-tell"></use>
+                            </svg></a>
+
+                    <a href="#"><svg class="swip-svg">
+                                <use xlink:href="./images/svg/sprite.svg#foot-tell"></use>
+                            </svg></a>
+
+                </div>
+              <div class="right-swiper">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. A magna pharetra, at pellentesque facilisi luctus risus. Proin massa dictum sit ullamcorper.Lorem ipsum dolor sit amet, consectetur adipiscing elit. A magna pharetra, at pellentesque facilisi luctus risus. Proin massa dictum sit ullamcorper.
+</div>
+               
+            
+         
+
+       
+       
     	</div>
-    	<div class="right-swiper">Lorem ipsum dolor sit amet, consectetur adipiscing elit. A magna pharetra, at pellentesque facilisi luctus risus. Proin massa dictum sit ullamcorper.Lorem ipsum dolor sit amet, consectetur adipiscing elit. A magna pharetra, at pellentesque facilisi luctus risus. Proin massa dictum sit ullamcorper.</div></div>
     	
     </div>
    
-   <div class="swiper-slide">
-    	<div class="wiper-body"><div class="left-swiper">
-    	<div class="icon-img"><img src="" alt=""></div>
-    		<div class="swiper-title">Михаил</div>
-    		<div class="contact-swip">
-    		
-    			<a href="#"><svg class="swip-svg">
-							<use xlink:href="./images/svg/sprite.svg#foot-tell"></use>
-						</svg></a>
-						
-    			<a href="#"><svg class="swip-svg">
-							<use xlink:href="./images/svg/sprite.svg#foot-tell"></use>
-						</svg></a>
-						
-    			<a href="#"><svg class="swip-svg">
-							<use xlink:href="./images/svg/sprite.svg#foot-tell"></use>
-						</svg></a>
-						
-    		</div>
+    <div class="swiper-slide">
+    	<div class="wiper-body">
+    	
+           
+           
+            <div class="left-swiper">
+            <div class="icon-img"><img src="" alt=""></div>
+                <div class="swiper-title">Михаил</div>
+
+            </div>
+             <div class="contact-swip">
+
+                    <a href="#"><svg class="swip-svg">
+                                <use xlink:href="./images/svg/sprite.svg#foot-tell"></use>
+                            </svg></a>
+
+                    <a href="#"><svg class="swip-svg">
+                                <use xlink:href="./images/svg/sprite.svg#foot-tell"></use>
+                            </svg></a>
+
+                    <a href="#"><svg class="swip-svg">
+                                <use xlink:href="./images/svg/sprite.svg#foot-tell"></use>
+                            </svg></a>
+
+                </div>
+              <div class="right-swiper">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. A magna pharetra, at pellentesque facilisi luctus risus. Proin massa dictum sit ullamcorper.Lorem ipsum dolor sit amet, consectetur adipiscing elit. A magna pharetra, at pellentesque facilisi luctus risus. Proin massa dictum sit ullamcorper.
+</div>
+               
+            
+         
+
+       
+       
     	</div>
-    	<div class="right-swiper">Lorem ipsum dolor sit amet, consectetur adipiscing elit. A magna pharetra, at pellentesque facilisi luctus risus. Proin massa dictum sit ullamcorper.Lorem ipsum dolor sit amet, consectetur adipiscing elit. A magna pharetra, at pellentesque facilisi luctus risus. Proin massa dictum sit ullamcorper.</div></div>
     	
     </div>
    
-   <div class="swiper-slide">
-    	<div class="wiper-body"><div class="left-swiper">
-    	<div class="icon-img"><img src="" alt=""></div>
-    		<div class="swiper-title">Михаил</div>
-    		<div class="contact-swip">
-    		
-    			<a href="#"><svg class="swip-svg">
-							<use xlink:href="./images/svg/sprite.svg#foot-tell"></use>
-						</svg></a>
-						
-    			<a href="#"><svg class="swip-svg">
-							<use xlink:href="./images/svg/sprite.svg#foot-tell"></use>
-						</svg></a>
-						
-    			<a href="#"><svg class="swip-svg">
-							<use xlink:href="./images/svg/sprite.svg#foot-tell"></use>
-						</svg></a>
-						
-    		</div>
-    	</div>
-    	<div class="right-swiper">Lorem ipsum dolor sit amet, consectetur adipiscing elit. A magna pharetra, at pellentesque facilisi luctus risus. Proin massa dictum sit ullamcorper.Lorem ipsum dolor sit amet, consectetur adipiscing elit. A magna pharetra, at pellentesque facilisi luctus risus. Proin massa dictum sit ullamcorper.</div></div>
-    	
-    </div>
    
+  
 
   </div>
   <!-- If we need pagination -->
@@ -905,230 +983,175 @@ radeon adc</li>
 		</div>
 	</div>
 </section>
-	<section class="tariffs">
-	<div class="container">
-		<div class="tariffs-body">
-			<h2 class="tariffs-title">
-				ТАРИФЫ
+	<section class="tariffs" data_bg="bg">
+    <div class="container">
+        <div class="tariffs-body">
+            <h2 class="tariffs-title">
+				Тарифы
 			</h2>
-			<div class="tariffs-center">
-				<div class="tariffs-product">
-					<div class="product-title">
-						<div class="tariff-block">
-							Тариф
-						</div>
-						“Сам себе космонавт”
-					</div>
-					<div class="prod-center prod-one">
-						
-					<ul class="product-list">
-						<li>-Уроки по 40-120 минут</li>
-						<li>-5 модулей</li>
-						<li>-Проверка ДЗ</li>
-						<li>-Методички</li>
-						<li>-35 уроков</li>
-					</ul>
-					<div class="product-bott">
-						<span class="price">7500₽</span>
-						<button class="product-btn">ПРИОБРЕСТИ</button>
-					</div>
-					</div>
-				</div>
-				
-				<div class="tariffs-product">
-					<div class="product-title">
-						<div class="tariff-block">
-							Тариф
-						</div>
-						“Лётчик испытатель”
-					</div>
-					<div class="prod-center prod-twoo">
-						
-					<ul class="product-list">
-						<li>-Уроки по 40-120 минут</li>
-						<li>-5 модулей</li>
-						<li>-Проверка ДЗ</li>
-						<li>-Методички</li>
-						<li>-35 уроков</li>
-					</ul>
-					<div class="product-bott">
-						<span class="price">7500₽</span>
-						<button class="product-btn">ПРИОБРЕСТИ</button>
-					</div>
-					</div>
-				</div>
-				
-				<div class="tariffs-product">
-					<div class="product-title">
-						<div class="tariff-block">
-							Тариф
-						</div>
-						“Илон Маск”
-					</div>
-					<div class="prod-center prod-three">
-						
-					<ul class="product-list">
-						<li>-Уроки по 40-120 минут</li>
-						<li>-5 модулей</li>
-						<li>-Проверка ДЗ</li>
-						<li>-Методички</li>
-						<li>-35 уроков</li>
-					</ul>
-					<div class="product-bott">
-						<span class="price">7500₽</span>
-						<button class="product-btn">ПРИОБРЕСТИ</button>
-					</div>
-					</div>
-				</div>
-				
-				
-			</div>
-			<div class="tariffs-contacts">
-				<h2 class="tariffs-title">
-					КОНТАКТЫ
+            <div class="tariffs-center">
+                <div class="tariffs-product">
+                    <div class="product-title">
+                        <div class="tariff-block"> Тариф </div> “Сам себе космонавт” </div>
+                    <div class="prod-center prod-one">
+                        <ul class="product-list">
+                            <li>-Уроки по 40-120 минут</li>
+                            <li>-5 модулей</li>
+                            <li>-Проверка ДЗ</li>
+                            <li>-Методички</li>
+                            <li>-35 уроков</li>
+                        </ul>
+                        <div class="product-bott">
+                            <div class="discount">15500₽</div>
+                            <div class="price">7500₽</div>
+                            <button class="product-btn">Приобрести</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="tariffs-product">
+                    <div class="product-title">
+                        <div class="tariff-block"> Тариф </div> “Лётчик испытатель” </div>
+                    <div class="prod-center prod-twoo">
+                        <ul class="product-list">
+                            <li>-Уроки по 40-120 минут</li>
+                            <li>-5 модулей</li>
+                            <li>-Проверка ДЗ</li>
+                            <li>-Методички</li>
+                            <li>-35 уроков</li>
+                        </ul>
+                        <div class="product-bott">
+                            <div class="discount"></div>
+                            <div class="price">7500₽</div>
+                            <button class="product-btn">Приобрести</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="tariffs-product">
+                    <div class="product-title">
+                        <div class="tariff-block"> Тариф </div> “Илон Маск” </div>
+                    <div class="prod-center prod-three">
+                        <ul class="product-list">
+                            <li>-Уроки по 40-120 минут</li>
+                            <li>-5 модулей</li>
+                            <li>-Проверка ДЗ</li>
+                            <li>-Методички</li>
+                            <li>-35 уроков</li>
+                        </ul>
+                        <div class="product-bott">
+                            <div class="discount"></div>
+                            <div class="price">7500₽</div>
+                            <button class="product-btn">Приобрести</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tariffs-contacts">
+                <h2 class="tariffs-title">
+					Контакты
 				</h2>
-				<div class="tariffs-link-blocks">
-					<div class="link-blocks-tell">
-						
-						<div class="link-sprite">
-					<svg class="tariffs-sprite">
-							<use xlink:href="./images/svg/sprite.svg#tell">	
-						</use>
-					</svg>	
-					</div>
-						
-						<div class="link-left">
-							<div class="id">
-								@BorisRubtsov
-							</div>
-							<div class="subscribets">
-								5K<sup>подписчиков</sup>
-							</div>
-						</div>
-						<ul class="link-center">
-							<li>Lorem ipsum dolor</li>
-							<li>Lorem ipsum dolor</li>
-							<li>Lorem ipsum dolor</li>
-						</ul>
-						<div class="link-right">
-							<button class="link-btn">СМОТРЕТЬ
-								<svg class="arrow-sprite">
-									<use xlink:href="./images/svg/sprite.svg#Arrow-video">	
-									</use>
-								</svg>
-							</button>
-						</div>
-					</div>
-					
-					<div class="link-blocks-inst">
-					
-					<div class="link-sprite">
-					<svg class="tariffs-sprite">
-							<use xlink:href="./images/svg/sprite.svg#inst">	
-						</use>
-					</svg>	
-					</div>
-						
-						<div class="link-left">
-							<div class="id">
-								@borubtsov
-							</div>
-							<div class="subscribets">
-								5K<sup>подписчиков</sup>
-							</div>
-						</div>
-						<ul class="link-center">
-							<li>Lorem ipsum dolor</li>
-							<li>Lorem ipsum dolor</li>
-							<li>Lorem ipsum dolor</li>
-						</ul>
-						<div class="link-right">
-							<button class="link-btn">СМОТРЕТЬ
-								<svg class="arrow-sprite">
-									<use xlink:href="./images/svg/sprite.svg#Arrow-video">	
-									</use>
-								</svg>
-							</button>
-						</div>
-					</div>
-					
-					<div class="link-blocks-youtube">
-					
-					<div class="link-sprite">
-					<svg class="tariffs-sprite">
-							<use xlink:href="./images/svg/sprite.svg#YOUTUBE_icon">	
-						</use>
-					</svg>	
-					</div>
-					
-					
-						<div class="link-left">
-							<div class="id">
-								Rubtsov Boris
-							</div>
-							<div class="subscribets">
-								5K<sup>подписчиков</sup>
-							</div>
-						</div>
-						<ul class="link-center">
-							<li>Lorem ipsum dolor</li>
-							<li>Lorem ipsum dolor</li>
-							<li>Lorem ipsum dolor</li>
-						</ul>
-						<div class="link-right">
-							<button class="link-btn">СМОТРЕТЬ
-								<svg class="arrow-sprite">
-									<use xlink:href="./images/svg/sprite.svg#Arrow-video">	
-									</use>
-								</svg>
-							</button>
-						</div>
-					</div>
-					
-					<div class="link-blocks-youtube">
-					
-					<div class="link-sprite">
-					<svg class="tariffs-sprite">
-							<use xlink:href="./images/svg/sprite.svg#YOUTUBE_icon">	
-						</use>
-					</svg>	
-					</div>
-					
-					
-						<div class="link-left">
-							<div class="id">
-								Rubtsov Boris
-							</div>
-							<div class="subscribets">
-								5K<sup>подписчиков</sup>
-							</div>
-						</div>
-						<ul class="link-center">
-							<li>Lorem ipsum dolor</li>
-							<li>Lorem ipsum dolor</li>
-							<li>Lorem ipsum dolor</li>
-						</ul>
-						<div class="link-right">
-							<button class="link-btn">СМОТРЕТЬ
-								<svg class="arrow-sprite">
-									<use xlink:href="./images/svg/sprite.svg#Arrow-video">	
-									</use>
-								</svg>
-							</button>
-						</div>
-					</div>
-					
-					
-				</div>
-			</div>
-		</div>
-	</div>
+                <div class="tariffs-link-blocks">
+                    <div class="link-blocks-tell">
+                        <div class="link-sprite">
+                            <svg class="tariffs-sprite">
+                                <use xlink:href="./images/svg/sprite.svg#tell"> </use>
+                            </svg>
+                        </div>
+                        <div class="link-left">
+                            <div class="id"> @BorisRubtsov </div>
+                            <div class="subscribets"> 5K<sup>подписчиков</sup> </div>
+                        </div>
+                        <ul class="link-center">
+                            <li>Lorem ipsum dolor</li>
+                            <li>Lorem ipsum dolor</li>
+                            <li>Lorem ipsum dolor</li>
+                        </ul>
+                        <div class="link-right">
+                            <button class="link-btn">Смотреть
+                                <svg class="arrow-sprite">
+                                    <use xlink:href="./images/svg/sprite.svg#Arrow-video"> </use>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="link-blocks-inst">
+                        <div class="link-sprite">
+                            <svg class="tariffs-sprite">
+                                <use xlink:href="./images/svg/sprite.svg#inst"> </use>
+                            </svg>
+                        </div>
+                        <div class="link-left">
+                            <div class="id"> @borubtsov </div>
+                            <div class="subscribets"> 5K<sup>подписчиков</sup> </div>
+                        </div>
+                        <ul class="link-center">
+                            <li>Lorem ipsum dolor</li>
+                            <li>Lorem ipsum dolor</li>
+                            <li>Lorem ipsum dolor</li>
+                        </ul>
+                        <div class="link-right">
+                            <button class="link-btn">Смотреть 
+                                <svg class="arrow-sprite">
+                                    <use xlink:href="./images/svg/sprite.svg#Arrow-video"> </use>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="link-blocks-youtube">
+                        <div class="link-sprite">
+                            <svg class="tariffs-sprite">
+                                <use xlink:href="./images/svg/sprite.svg#YOUTUBE_icon"> </use>
+                            </svg>
+                        </div>
+                        <div class="link-left">
+                            <div class="id"> Rubtsov Boris </div>
+                            <div class="subscribets"> 5K<sup>подписчиков</sup> </div>
+                        </div>
+                        <ul class="link-center">
+                            <li>Lorem ipsum dolor</li>
+                            <li>Lorem ipsum dolor</li>
+                            <li>Lorem ipsum dolor</li>
+                        </ul>
+                        <div class="link-right">
+                            <button class="link-btn">СМОТРЕТЬ
+                                <svg class="arrow-sprite">
+                                    <use xlink:href="./images/svg/sprite.svg#Arrow-video"> </use>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="link-blocks-youtube">
+                        <div class="link-sprite">
+                            <svg class="tariffs-sprite">
+                                <use xlink:href="./images/svg/sprite.svg#YOUTUBE_icon"> </use>
+                            </svg>
+                        </div>
+                        <div class="link-left">
+                            <div class="id"> Rubtsov Boris </div>
+                            <div class="subscribets"> 5K<sup>подписчиков</sup> </div>
+                        </div>
+                        <ul class="link-center">
+                            <li>Lorem ipsum dolor</li>
+                            <li>Lorem ipsum dolor</li>
+                            <li>Lorem ipsum dolor</li>
+                        </ul>
+                        <div class="link-right">
+                            <button class="link-btn">Смотреть
+                                <svg class="arrow-sprite">
+                                    <use xlink:href="./images/svg/sprite.svg#Arrow-video"> </use>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </section>
-	<section class="faq">
+	<section class="faq" id="faq-part" data_bg="bg">
 	<div class="container">
 		<div class="faq-body">
 			<h2 class="faq-title">
-				F.A.Q.
+				f.a.q.
 			</h2>
 			<div class="faq-center">
 				
@@ -1214,7 +1237,13 @@ radeon adc</li>
 			
 				<div class="footer-logo">
 				
-					<a href="#"><img src="images/logo.svg" alt=""></a>
+					<a href="#">
+					
+				
+					
+					<img  alt="Ленивое изображение" class="lazy" data-src= "./images/logo.svg" >
+					
+					</a>
 					
 				</div>
 				
@@ -1259,7 +1288,7 @@ radeon adc</li>
 			
 				<div class="footer-bott">
 					
-				<a class="f-mail" href="#">pochta@gmail.com</a>
+				<a class="f-mail" href="mailto:pochta@gmail.com">pochta@gmail.com</a>
 				<a href="#">Договор-оферта</a>
 				<a href="#">Политика конфеденциальности</a>
 				</div>
@@ -1267,10 +1296,10 @@ radeon adc</li>
 			
 			<div class="footer-list">
 				<ul class="footer-id">
-					<li><a href="#">Автор</a></li>
-					<li><a href="#">Курс</a></li>
-					<li><a href="#">Отзывы</a></li>
-					<li><a href="#">Бесплатные уроки</a></li>
+					<li><a href="#author-part">Автор</a></li>
+					<li><a href="#video-part">Курс</a></li>
+					<li><a href="#slider-part">Отзывы</a></li>
+					<li><a href="#components-part">Бесплатные уроки</a></li>
 				</ul>
 				<div class="payment">
 					<div class="payment-block"></div>
@@ -1282,7 +1311,7 @@ radeon adc</li>
 			
 			<div class="footer-list">
 				<div class="footer-name">ИП Рубцов Борис</div>
-				<div class="footer-tell">Телефон: <a href="#"> 8 (800) 888-88-88</a> </div>
+				<div class="footer-tell">Телефон: <a href="tel:+88008888888"> 8 (800) 888-88-88</a> </div>
 				<div class="address">Адрес: Город, Улица, Дом</div>
 				<div class="inn">ИНН: 123456789876</div>
 			</div>
@@ -1291,5 +1320,6 @@ radeon adc</li>
 </footer>
 
 <script src="scripts/main.js"></script>  
+    
 </body>
 </html>
