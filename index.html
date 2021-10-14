@@ -14,7 +14,7 @@
         <header class="modal__content">
          
 			
-         <iframe id="iframe-modal" src=""></iframe>
+         <iframe class="some-video" src=""></iframe>
           <button class="modal__close" aria-label="Close modal" data-custom-close></button>
         </header>
        
@@ -29,7 +29,7 @@
         <header class="modal__content">
          
 			
-         <img id="iframe-modal-img" src="">
+         <img class="some" src="">
           <button class="modal__close" aria-label="Close modal" data-custom-close></button>
         </header>
        
@@ -181,7 +181,7 @@
 		</div>
 	</div>
 </section>
-	<section class="stars" data_bg="bg">
+	<section class="stars lazy" data-bg="./images/stars.png">
 	<div class="container">
 		<div class="stars-body">
 			<h2 class="stars-title">
@@ -298,7 +298,7 @@
 		</div>
 	</div>
 </section>
-	<section class="skill" data_bg="bg">
+	<section class="skill lazy" data-bg="./images/proverka.png">
 	<div class="container">
 		<div class="skill-body">
 			<div class="skill-title">
@@ -372,7 +372,7 @@ Lorem ipsum dolor sit amet.</div>
 		</div>
 	</div>
 </section>
-	<section class="video" id="video-part" data_bg="bg">
+	<section class="video lazy" id="video-part" data-bg="./images/stars.png">
 	<div class="container">
 		<div class="video-body">
 			<div class="video-title">
@@ -521,7 +521,7 @@ Lorem ipsum dolor sit amet.</div>
 		</div>
 	</div>
 </section>
-	<section class="stages" data_bg="bg">
+	<section class="stages lazy" data-bg="./images/mars2.png">
 	<div class="container">
 		<div class="stages-body">
 			<h2 class="stages-title">Как проходит обучение</h2>
@@ -672,11 +672,53 @@ radeon adc</li>
 			
 			
 			        <div class="grid">
-  <span class="grid-video div1"><button  aria-label="Close modal" data-custom-open="modal-1"  data-video="https://www.youtube.com/embed/buRTjC81_9c"> </button></span>
-  <span class="grid-video div2"><button  aria-label="Close modal" data-custom-open="modal-1"  data-video="https://www.youtube.com/embed/buRTjC81_9c"> </button></span>
-  <span class="grid-video div3"><button  aria-label="Close modal" data-custom-open="modal-1"  data-video="https://www.youtube.com/embed/buRTjC81_9c"> </button></span>
-  <span class="grid-video div4"><button  aria-label="Close modal" data-custom-open="modal-1"  data-video="https://www.youtube.com/embed/buRTjC81_9c"> </button></span>
-  <span class="grid-video div5"><button  aria-label="Close modal" data-custom-open="modal-1"  data-video="https://www.youtube.com/embed/buRTjC81_9c"> </button></span>
+  <span class="grid-video div1" data-custom-open="modal-1" >
+     <button data-video="https://www.youtube.com/embed/buRTjC81_9c"></button>
+     <iframe class = "video-midals lazy"  data-src="https://www.youtube.com/embed/buRTjC81_9c"
+    >
+         
+     </iframe>  
+     
+  </span>
+<!--
+  <span class="grid-video div2">
+  <button  data-custom-open="modal-1"  data-video="https://www.youtube.com/embed/buRTjC81_9c"> </button>
+  
+  </span>
+  
+-->
+ <span class="grid-video div2" data-custom-open="modal-1" >
+     <button data-video="https://www.youtube.com/embed/buRTjC81_9c"></button>
+     <iframe class = "video-midals lazy"  data-src="https://www.youtube.com/embed/buRTjC81_9c"
+    >
+         
+     </iframe>  
+     
+  </span>
+  <span class="grid-video div3" data-custom-open="modal-1" >
+     <button data-video="https://www.youtube.com/embed/buRTjC81_9c"></button>
+     <iframe class = "video-midals lazy"  data-src="https://www.youtube.com/embed/buRTjC81_9c"
+    >
+         
+     </iframe>  
+     
+  </span>
+  <span class="grid-video div4" data-custom-open="modal-1" >
+     <button data-video="https://www.youtube.com/embed/buRTjC81_9c"></button>
+     <iframe class = "video-midals lazy"  data-src="https://www.youtube.com/embed/buRTjC81_9c"
+    >
+         
+     </iframe>  
+     
+  </span>
+  <span class="grid-video div5" data-custom-open="modal-1" >
+     <button data-video="https://www.youtube.com/embed/buRTjC81_9c"></button>
+     <iframe class = "video-midals lazy"  data-src="https://www.youtube.com/embed/buRTjC81_9c"
+    >
+         
+     </iframe>  
+     
+  </span>
 </div>
 			
 			
@@ -695,8 +737,9 @@ radeon adc</li>
 		
 		<div class="swiper-slide">
 			<div class="comp-images-swap">
-				<img src="" alt="">
-				<button class="loop-btn" aria-label="Close modal" data-images="./images/Comp.png" data-custom-open="modal-2" >
+				<img class="images-modal swiper-lazy" data-src="./images/Comp.png" alt="">
+				
+				<button class="loop-btn " aria-label="Close modal" data-images="./images/Comp.png" data-custom-open="modal-2" >
 						<svg class="loop-svg">
 							<use xlink:href="./images/svg/sprite.svg#loop"></use>
 						</svg>
@@ -707,74 +750,68 @@ radeon adc</li>
 
 		<div class="swiper-slide">
 			<div class="comp-images-swap">
-				<img src="" alt="">
-				<button class="loop-btn" aria-label="Close modal" data-custom-open="modal-2" data-images="./images/Comp.png"><svg class="loop-svg">
+				<img class="images-modal swiper-lazy" data-src="./images/Comp.png" alt="">
+				
+				<button class="loop-btn " aria-label="Close modal" data-images="./images/Comp.png" data-custom-open="modal-2" >
+						<svg class="loop-svg">
 							<use xlink:href="./images/svg/sprite.svg#loop"></use>
-						</svg></button>
+						</svg>
+				</button>
 				
 			</div>
 </div>
 
 		<div class="swiper-slide">
 			<div class="comp-images-swap">
-				<img src="" alt="">
-				<button class="loop-btn" aria-label="Close modal" data-custom-open="modal-2" data-images="./images/Comp.png"><svg class="loop-svg">
+				<img class="images-modal swiper-lazy" data-src="./images/Comp.png" alt="">
+				
+				<button class="loop-btn " aria-label="Close modal" data-images="./images/Comp.png" data-custom-open="modal-2" >
+						<svg class="loop-svg">
 							<use xlink:href="./images/svg/sprite.svg#loop"></use>
-						</svg></button>
+						</svg>
+				</button>
 				
 			</div>
 </div>
 
 		<div class="swiper-slide">
 			<div class="comp-images-swap">
-				<img src="" alt="">
-				<button class="loop-btn" aria-label="Close modal" data-custom-open="modal-2" data-images="./images/product1.png"><svg class="loop-svg">
+				<img class="images-modal swiper-lazy" data-src="./images/Comp.png" alt="">
+				
+				<button class="loop-btn " aria-label="Close modal" data-images="./images/Comp.png" data-custom-open="modal-2" >
+						<svg class="loop-svg">
 							<use xlink:href="./images/svg/sprite.svg#loop"></use>
-						</svg></button>
+						</svg>
+				</button>
 				
 			</div>
 </div>
 
 		<div class="swiper-slide">
 			<div class="comp-images-swap">
-				<img src="" alt="">
-				<button class="loop-btn" aria-label="Close modal" data-custom-open="modal-2" data-images="./images/Comp.png"><svg class="loop-svg">
+				<img class="images-modal swiper-lazy" data-src="./images/Comp.png" alt="">
+				
+				<button class="loop-btn " aria-label="Close modal" data-images="./images/Comp.png" data-custom-open="modal-2" >
+						<svg class="loop-svg">
 							<use xlink:href="./images/svg/sprite.svg#loop"></use>
-						</svg></button>
+						</svg>
+				</button>
 				
 			</div>
 </div>
 
 		<div class="swiper-slide">
 			<div class="comp-images-swap">
-				<img src="" alt="">
-				<button class="loop-btn" aria-label="Close modal" data-custom-open="modal-2" data-images="./images/Comp.png"><svg class="loop-svg">
+				<img class="images-modal swiper-lazy" data-src="./images/Comp.png" alt="">
+				
+				<button class="loop-btn " aria-label="Close modal" data-images="./images/Comp.png" data-custom-open="modal-2" >
+						<svg class="loop-svg">
 							<use xlink:href="./images/svg/sprite.svg#loop"></use>
-						</svg></button>
+						</svg>
+				</button>
 				
 			</div>
 </div>
-
-		<div class="swiper-slide">
-			<div class="comp-images-swap">
-				<img src="" alt="">
-				<button class="loop-btn" aria-label="Close modal" data-custom-open="modal-2" data-images="./images/Comp.png"><svg class="loop-svg">
-							<use xlink:href="./images/svg/sprite.svg#loop"></use>
-						</svg></button>
-				
-			</div>
-</div>
-
-		<div class="swiper-slide">
-			<div class="comp-images-swap">
-				<img src="" alt="">
-				<button class="loop-btn" aria-label="Close modal" data-custom-open="modal-2" data-images="./images/Comp.png"><svg class="loop-svg">
-							<use xlink:href="./images/svg/sprite.svg#loop"></use>
-						</svg></button>
-				
-			</div>
-</div>
-
 
 	</div>
 
@@ -789,7 +826,7 @@ radeon adc</li>
 	</div>
 </section>
 
-	<section class="slider" id="slider-part" data_bg="bg">
+	<section class="slider lazy" id="slider-part" data-bg-multi="url(../images/moon.png),url(../images/stars.png)">
 	<div class="container">
 		<div class="slider-body">
 			<div class="slider-title">
@@ -983,7 +1020,7 @@ radeon adc</li>
 		</div>
 	</div>
 </section>
-	<section class="tariffs" data_bg="bg">
+	<section class="tariffs lazy" data-bg="./images/stars.png">
     <div class="container">
         <div class="tariffs-body">
             <h2 class="tariffs-title">
@@ -1002,7 +1039,7 @@ radeon adc</li>
                             <li>-35 уроков</li>
                         </ul>
                         <div class="product-bott">
-                            <div class="discount">15500₽</div>
+                            <div class="discount">15500<span>₽</span></div>
                             <div class="price">7500₽</div>
                             <button class="product-btn">Приобрести</button>
                         </div>
@@ -1147,7 +1184,7 @@ radeon adc</li>
         </div>
     </div>
 </section>
-	<section class="faq" id="faq-part" data_bg="bg">
+	<section class="faq lazy" id="faq-part" data-bg-multi ="url(../images/black.png), url(../images/faq.png)">
 	<div class="container">
 		<div class="faq-body">
 			<h2 class="faq-title">
